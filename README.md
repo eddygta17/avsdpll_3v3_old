@@ -16,3 +16,17 @@ This repository hosts relevant files on the IP.
     3. [VCO](https://github.com/eddygta17/avsdpll_3v3/tree/master/02.Schematic/iii.VCO)
     4. [Charge Pump](https://github.com/eddygta17/avsdpll_3v3/tree/master/02.Schematic/iv.ChargePump)
     5. [PLL](https://github.com/eddygta17/avsdpll_3v3/tree/master/02.Schematic/v.PLL)
+
+## Pre-layout Simulation of PLL 
+1. Input Frequency (F_in) = 5MHz
+2. Input Frequency (F_in) = 10MHz
+3. Input Frequency (F_in) = 12MHz
+
+### Contributors
+- **Abel Joseph John** 
+- **Kunal Promode Ghosh** 
+- **Philipp Gühring** 
+
+### Acknowledgments
+- Kunal Promode Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Philipp Gühring, Software Architect, LibreSilicon Assocation
