@@ -1,0 +1,51 @@
+* SPICE3 file created from DIV2One.ext - technology: scmos
+
+.option scale=0.01u
+.include osu018.lib
+M1000 a_48_6# a_12_n22# a_48_n22# w_n1073741817_n1073741817# nfet w=130 l=20
++  ad=6500 pd=360 as=15600 ps=500
+M1001 out a_48_6# vdd w_n3_0# pfet w=130 l=20
++  ad=7800 pd=380 as=27300 ps=1200
+M1002 a_48_n22# in gnd w_n1073741817_n1073741817# nfet w=130 l=20
++  ad=0 pd=0 as=20800 ps=1100
+M1003 out in a_78_n22# w_n1073741817_n1073741817# nfet w=130 l=20
++  ad=6500 pd=360 as=15600 ps=500
+M1004 a_78_n22# a_48_6# gnd w_n1073741817_n1073741817# nfet w=130 l=20
++  ad=0 pd=0 as=0 ps=0
+M1005 a_12_6# out vdd w_n3_0# pfet w=130 l=20
++  ad=15600 pd=500 as=0 ps=0
+M1006 a_12_n22# in a_12_6# w_n3_0# pfet w=130 l=20
++  ad=9100 pd=400 as=0 ps=0
+M1007 a_12_n22# out gnd w_n1073741817_n1073741817# nfet w=130 l=20
++  ad=6500 pd=360 as=0 ps=0
+M1008 a_48_6# in vdd w_n3_0# pfet w=130 l=20
++  ad=7800 pd=380 as=0 ps=0
+C0 a_12_n22# gnd 0.01fF
+C1 w_n3_0# vdd 0.06fF
+C2 a_48_6# a_12_n22# 0.02fF
+C3 in vdd 0.04fF
+C4 out gnd 0.03fF
+C5 out a_12_n22# 0.24fF
+C6 w_n3_0# a_48_6# 0.09fF
+C7 w_n3_0# a_12_n22# 0.02fF
+C8 in a_48_6# 0.03fF
+C9 in a_12_n22# 0.02fF
+C10 w_n3_0# out 0.14fF
+C11 in out 0.02fF
+C12 w_n3_0# in 0.32fF
+C13 gnd w_n1073741817_n1073741817# 0.55fF
+C14 a_12_n22# w_n1073741817_n1073741817# 0.56fF
+C15 vdd w_n1073741817_n1073741817# 0.44fF
+C16 a_48_6# w_n1073741817_n1073741817# 0.33fF
+C17 out w_n1073741817_n1073741817# 0.98fF
+C18 in w_n1073741817_n1073741817# 0.82fF
+C19 w_n3_0# w_n1073741817_n1073741817# 2.01fF
+
+v1 vdd gnd 1.8
+v2 in gnd pulse(0 1.8 1p 1p 1p 50n 100n)
+.tran 10e-12 20e-09 0e-00
+.control
+run
+plot V(out) vs time
+.endc
+.end

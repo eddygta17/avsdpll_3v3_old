@@ -1,0 +1,7 @@
+Circuit: * SPICE3 file created from DIV2One.ext - technology: scmos
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Fatal Error: Run: Missing node(s).
